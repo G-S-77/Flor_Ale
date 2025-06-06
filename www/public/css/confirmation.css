@@ -1,0 +1,135 @@
+#age-check {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.question {
+  color: #f1f1f1;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 2rem;
+}
+
+.age {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.btn-age {
+  text-decoration: none;
+  padding: 0.6rem 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.btn-age:hover {
+  background-color: white;
+  color: #121212;
+  transform: scale(1.2);
+}
+
+img{
+  width: 100%;
+}
+
+.logo-confirm {
+  width: auto; 
+  margin: 2em 0 0;
+}
+
+.note {
+  color: #f1f1f1;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.overlay-popup{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.active-popup{
+  display: flex !important;
+}
+
+.content-popup{
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content-popup::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../images/fleurs/pattern_fleur.png') no-repeat;
+  border-radius: 20px;
+  background-size: fill;
+  opacity: 0.15;
+  z-index: 0;
+}
+
+.content-popup h2{
+    font-size: 2rem;
+}
+
+.content-popup p{
+    margin: 2% 0 0;
+}
+
+.content-popup button {
+    display: flex;
+    padding: 2%;
+    width: auto;
+    height: 40px;
+    border: 0px;
+    border-radius: 5px;
+    color: #f1f1f1;
+    margin-top: 5%;
+    background: #9230aa;
+    font-size: 1.2em;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+    z-index: 2;
+}
+
+@media screen and (max-width: 700px) {
+  #age-check {
+    max-width: 90vw;
+    margin: auto;
+    word-wrap: break-word;   
+  }
+
+  .logo-confirm {
+    max-width: 100vw;
+  }
+
+  .content-popup {
+    max-width: 90vw;
+    margin: auto;
+    word-wrap: break-word;   
+    font-size: 1rem;
+  }
+}

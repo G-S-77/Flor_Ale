@@ -1,0 +1,152 @@
+h2{
+    font-size: 2.5em;
+}
+
+h2, p, label {
+    color: #f1f1f1;
+    text-align: center;
+}
+
+p, label{
+    font-size: 1.3em;
+    margin-top: 1%;
+}
+
+#panier{
+    grid-row: 1 / 4;
+}
+
+/* Grille contenant les cartes */
+.bieres {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
+    gap: 40px;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Carte produit */
+.produits {
+  background-color: #1f1f1fca;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: .4s;
+}
+
+.produits img {
+  max-width: 100%;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.nom {
+  font-family: 'Imperial', cursive;
+  font-size: 40px;
+  margin: 10px 0;
+  color: #f9c74f;
+}
+.produits label {
+  margin-bottom: 5px;
+}
+
+.produits input[type="number"] {
+  width: 80px;
+  height: 30px;
+  font-size: 14px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  background-color: #a76ebc;
+  box-shadow: 0 0 5px #c351d380;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.nombre {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.nombre input {
+  width: 60px;
+  text-align: center;
+  padding: 6px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 2px solid #ccc;
+}
+
+.nombre button {
+  padding: 6px 10px;
+  background-color: #9230aa;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.nombre button:hover {
+  background-color: #eea9ff;
+  color: #121212;
+}
+
+/* Bouton */
+.bouton {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.bouton button {
+  background-color: #c41f1f;
+  color: white;
+  border: none;
+  padding: 14px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.bouton button:hover {
+  background-color: #391414;
+}
+
+.produits:hover {
+  scale: 1.05;
+  transition-property: transform;
+  transition: .4s;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #121212;
+}
+/* Responsive : une colonne sur mobile */
+@media (max-width: 768px) {
+  .bieres {
+    grid-template-columns: 1fr;
+  }
+}

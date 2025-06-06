@@ -1,13 +1,13 @@
 <?php
 
 /** The name of the database for our website */
-define( 'DB_NAME', 'my_database' );
+define( 'DB_NAME', 'florale' );
 
 /** Database username */
-define( 'DB_USER', 'user' );
+define( 'DB_USER', 'root' );
 
 /** Database password */
-define( 'DB_PASSWORD', 'userpassword' );
+define( 'DB_PASSWORD', 'rootpassword' );
 
 /** Database hostname */
 define( 'DB_HOST', 'mysql' );

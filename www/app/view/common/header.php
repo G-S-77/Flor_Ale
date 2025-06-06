@@ -1,24 +1,15 @@
-<!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="public/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="public/css/style.css" />
-    <title><?= $page_title ?></title>
-  </head>
-  <body>
-    <header>
-      <logo> Tech'Etud </logo>
-      <div class="login" aria-label="You're logged">
-        <img src="public/images/utilisateur.svg" alt="logged icon" />
-      </div>
-      <nav>
-        <ul>
-          <li class="current"><a href="index.php">Accueil</a></li>
-          <li><a href="index.php?route=trombi">Trombinoscope</a></li>
-          <li><a href="#">Cours</a></li>
-        </ul>
-      </nav>
+    <header id="header">
+        <nav>
+            <ul>
+                <li><a href="index.php?route=home"><img src="public/images/logo/logofleur.png" alt="Logo Flor’Ale"
+                            class="logo" aria-label="Amène à la page d'accueil"></a></li>
+                <li class="lien"><a href="index.php?route=home">Accueil</a></li>
+                <li><a href="index.php?route=bieres" class="lien">Nos bières</a></li>
+                <li><a href="index.php?route=equipe" class="lien">À propos de nous</a></li>
+                <li><a href="index.php?route=contact" class="lien">Nous contacter</a></li>
+                <li><a href="index.php?route=panier"><img src="public/images/logo/caddie.png" alt="caddie" class="panier"
+                            aria-label="
+                    Accéder à votre panier"></a></li>
+            </ul>
+        </nav>
     </header>
-  
