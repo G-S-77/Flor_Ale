@@ -21,7 +21,6 @@ switch ($route) {
         require_once 'app/controller/confirmation.controller.php';
         validateAge();
         break;
-        break;
     case 'home':
         require_once 'app/controller/home.controller.php';
         generateHomePage();
