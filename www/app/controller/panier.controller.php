@@ -5,7 +5,7 @@ require_once 'app/model/panier.model.php';
 require_once 'app/model/model.php';
 
 /**
- * controller en charge de la génération de la page d'accueil
+ * controller en charge de la génération de la page panier
  *
  * @return void
  */

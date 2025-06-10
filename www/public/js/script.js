@@ -159,10 +159,10 @@ function slidePrecedente(cards, group) {
 }
 
 function keyPress(e){
-    if(e.keyCode === 37){
+    if(e.keyCode === 39){
        slideSuivante(cardsMMI, 'MMI');
         slideSuivante(cardsGB, 'GB');
-    } else if(e.keyCode === 39){
+    } else if(e.keyCode === 37){
         slidePrecedente(cardsMMI, 'MMI');
         slidePrecedente(cardsGB, 'GB');
     }
