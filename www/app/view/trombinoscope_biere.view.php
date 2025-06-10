@@ -20,8 +20,8 @@
         <div class="list">
           <?php
         $i = 0;
-        foreach ($produits as $produit): ?>
-        <div class="item" data-id="<?= $produit['id'] ?>">
+        foreach ($produits as $produit): ?> <!-- Boucle PHP qui parcourt le tableau $produits contenant les données de chaque bière. -->
+        <div class="item" data-id="<?= $produit['id'] ?>"> 
             <h4 class="name"><?= $produit['nom'] ?></h4>
               <figure>
                  <a href="index.php?route=produit&id=<?= $produit['id'] ?>">
@@ -38,7 +38,7 @@
                 <span class="desc"><?= $produit['description'] ?></span>
               </div>
             </div>
-        <?php $i++; endforeach ?>
+        <!-- <?php $i++; endforeach ?> La description de la bière est affichée, puis la boucle se termine. -->
         </div>
         <div class="circle">
         </div>

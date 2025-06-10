@@ -5,7 +5,8 @@ require_once 'app/model/trombinoscope_biere.model.php';
 
 /**
  * controller en charge de la génération du trombinoscope des bières
- *
+ * 
+ *Afficher la page du trombinoscope liste complète des bières.,
  * @return void
  */
 function generateTrombiBeerPage() {
@@ -18,6 +19,7 @@ function generateTrombiBeerPage() {
 
     generatePage($data);
 }
+// Afficher une fiche produit détaillée pour une bière spécifique (via son ID).
 function generateFichePage() {
     $data = [
         'produit' => getBeerById($_GET['id']),
